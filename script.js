@@ -34,6 +34,9 @@ function generatePassword () {
     charset += special;
     console.log(charset);
   } 
+  if (charLower == false && charUpper == false&& charNumbers == false && charSpecial == false){
+      window.alert("select atleast one option!")
+  }
    retVal = "";
  for (var i = 0, n = charset.length; i < charLength; ++i) {  
           retVal += charset.charAt(Math.floor(Math.random() * n));
